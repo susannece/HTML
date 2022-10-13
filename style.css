@@ -1,0 +1,109 @@
+body{
+    width: 1024;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: azure;
+    font-family: Arial, sans-serif;
+    max-width: 1060px;
+    margin: auto;
+}
+
+header{
+    display: grid;
+    grid-area: header;
+    grid-template-areas: "logo navItem1 navItem2 navItem3 login";
+    background-color: cornsilk;
+    align-items: center;
+}
+#logo{
+    grid-area: logo;
+    background-image: linear-gradient(cornsilk, cyan);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+#navItem1{
+    grid-area: navItem1;
+    background-color: cornsilk;
+    margin: 25px, 50px, 50px, 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+#navItem2{
+    grid-area: navItem2;
+    background-color: cornsilk;
+    margin: 25px, 50px, 50px, 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+#navItem3{
+    grid-area: navItem3;
+    background-color: cornsilk;
+    margin: 25px, 50px, 50px, 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+#login{
+    grid-area: login;
+    background-image: linear-gradient(cyan, cornsilk);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+main{
+    display: grid;
+    grid-area: main;
+    grid-template-areas: 
+        "introHeadline introHeadline aside"
+        "introSubtext introSubtext aside"
+        "leftArticle rightArticle aside";
+    background-color: antiquewhite;
+}
+#introHeadline{
+    grid-area: introHeadline;
+    background-color: blanchedalmond ;
+}
+#introSubtext{
+    grid-area: introSubtext;
+    background-color: deepskyblue ;
+    margin: 10px;
+}
+#leftArticle{
+    grid-area: leftArticle;
+    margin: 10px;
+}
+#rightArticle{
+    grid-area: rightArticle;
+    margin: 10px;
+}
+aside{
+    grid-area: aside;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+form{
+    background-color: lightseagreen;
+    padding: 20px;
+    border-radius: 10px;
+}
+.submit{
+    background-color: darkolivegreen;
+}
+.reset{
+    background-color: tomato;
+}
+
+footer{
+    grid-area: footer;
+    background-color: greenyellow;
+    text-align: center;
+    padding: 5px;
+}
